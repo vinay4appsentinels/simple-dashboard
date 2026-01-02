@@ -28,3 +28,9 @@ p {
   font-size: 1.5rem;
   opacity: 0.9;
 }
+
+.current-date {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  opacity: 0.85;
+}
