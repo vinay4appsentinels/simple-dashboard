@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
   styleUrl: './footer.css'
 })
 export class FooterComponent {
-  currentYear = 2026;
+  currentYear = 2025;
   appName = 'Simple Dashboard';
   githubUrl = 'https://github.com/vinay4appsentinels/simple-dashboard';
 }
