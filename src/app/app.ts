@@ -11,4 +11,15 @@ import { HeaderComponent } from './components/header/header.component';
 })
 export class App {
   title = 'Simple Dashboard';
+
+  get currentDate(): string {
+    const now = new Date();
+    const options: Intl.DateTimeFormatOptions = {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric'
+    };
+    const formattedDate = now.toLocaleDateString('en-US', options);
+    return `Today is ${formattedDate}`;
+  }
 }
