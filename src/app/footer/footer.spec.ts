@@ -15,13 +15,13 @@ describe('FooterComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  it('should display copyright year 2026', async () => {
+  it('should display copyright year 2025', async () => {
     const fixture = TestBed.createComponent(FooterComponent);
     const component = fixture.componentInstance;
-    expect(component.currentYear).toBe(2026);
+    expect(component.currentYear).toBe(2025);
     await fixture.whenStable();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.textContent).toContain('2026');
+    expect(compiled.textContent).toContain('2025');
   });
 
   it('should display app name Simple Dashboard', async () => {
